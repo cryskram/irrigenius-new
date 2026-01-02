@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+html,
+body {
+    @apply bg-gray-100 text-gray-900;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Centering wrapper */
+.page-container {
+    @apply max-w-4xl mx-auto px-4 py-8;
+}
+
+/* Card container */
+.card {
+    @apply bg-white shadow-lg rounded-2xl p-6 mb-6;
+}
+
+/* Heading styles */
+.section-title {
+    @apply text-2xl font-bold mb-4 text-gray-800;
+}
+
+/* ------------------------------
+   BUTTONS
+------------------------------ */
+.btn {
+    @apply px-4 py-2 rounded-lg font-semibold transition-all duration-200 text-white cursor-pointer;
+}
+
+/* Red button */
+.btn-red {
+    @apply bg-red-500 hover:bg-red-600 active:bg-red-700;
+}
+
+/* Green button */
+.btn-green {
+    @apply bg-green-500 hover:bg-green-600 active:bg-green-700;
+}
+
+/* Blue button */
+.btn-blue {
+    @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700;
+}
+
+/* Disabled button */
+.btn-disabled {
+    @apply bg-gray-400 cursor-not-allowed;
+}
+
+/* ------------------------------
+   LAYOUT GRID
+------------------------------ */
+.stats-grid {
+    @apply grid grid-cols-1 sm:grid-cols-3 gap-4;
+}
+
+.stat-box {
+    @apply bg-white shadow-md rounded-xl p-4 text-center;
+}
+
+.stat-label {
+    @apply text-sm text-gray-600;
+}
+
+.stat-value {
+    @apply text-2xl font-bold mt-2;
+}
+
+/* ------------------------------
+   IMAGE STYLES
+------------------------------ */
+.preview-image {
+    @apply w-full rounded-xl shadow-md object-cover mt-4;
+}
+
+/* Heatmap side-by-side container */
+.image-row {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 mt-4;
+}
+
+/* ------------------------------
+   FORM INPUTS
+------------------------------ */
+.input-box {
+    @apply w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+/* ------------------------------
+   LOADING SPINNER
+------------------------------ */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3b82f6;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ------------------------------
+   MODES DROPDOWN
+------------------------------ */
+.mode-select {
+    @apply px-3 py-2 rounded-lg border border-gray-300 bg-white;
+}
+
+/* ------------------------------
+   DRONE PATH VISUALIZATION BOX
+------------------------------ */
+.drone-box {
+    @apply bg-gray-900 text-white rounded-xl p-4 font-mono text-sm mt-4 whitespace-pre-wrap;
+}
